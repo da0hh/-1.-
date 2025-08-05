@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main() { 
+  int dailyGrowth  = 50;
+  int nightFade  = 20;
+  int beginHeight = 100;
+  std::cout << "Изначальная высота бамбука: " << beginHeight << std::endl;
+  std::cout << "Бамбук растет днем на " << dailyGrowth << " см. \n";
+  std::cout << "Вредители съедают бамбук ночью на " << nightFade << " см.\n";
+  int thirdDay = beginHeight + (dailyGrowth - nightFade) * 2 + dailyGrowth / 2;
+  std::cout << "Высота бамбука к середине третьего дня составляет: " << thirdDay << " см.";
+}
